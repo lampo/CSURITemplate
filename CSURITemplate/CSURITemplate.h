@@ -6,6 +6,17 @@
 //  Copyright (c) 2013 Cogenta Systems Ltd. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
+
+//! Project version number for CSURITemplate.
+FOUNDATION_EXPORT double CSURITemplateVersionNumber;
+
+//! Project version string for CSURITemplate.
+FOUNDATION_EXPORT const unsigned char CSURITemplateVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <CSURITemplate/PublicHeader.h>
+
+
 #import <Foundation/Foundation.h>
 
 /**
@@ -28,7 +39,7 @@ typedef NS_ENUM(NSInteger, CSURITemplateError) {
 };
 
 /**
- An `NSNumber` value in the `userInfo` dictionary of errors returned while parsing a URI template that indicates 
+ An `NSNumber` value in the `userInfo` dictionary of errors returned while parsing a URI template that indicates
  the position in the string at which the error was encountered.
  */
 extern NSString *const CSURITemplateErrorScanLocationErrorKey;
@@ -46,12 +57,12 @@ extern NSString *const CSURITemplateErrorScanLocationErrorKey;
  
  For example:
  
-     NSError *error = nil;
-     CSURITemplate *template = [CSURITemplate URITemplateWithString:@"/search{?q}" error:&error];
-     NSString *uri1 = [template relativeStringWithVariables:@{@"q": @"hateoas"}];
-     NSString *uri2 = [template relativeStringWithVariables:@{@"q": @"hal"}];
-     assert([uri1 isEqualToString:@"/search?q=hateoas"]);
-     assert([uri2 isEqualToString:@"/search?q=hal"]);
+ NSError *error = nil;
+ CSURITemplate *template = [CSURITemplate URITemplateWithString:@"/search{?q}" error:&error];
+ NSString *uri1 = [template relativeStringWithVariables:@{@"q": @"hateoas"}];
+ NSString *uri2 = [template relativeStringWithVariables:@{@"q": @"hal"}];
+ assert([uri1 isEqualToString:@"/search?q=hateoas"]);
+ assert([uri2 isEqualToString:@"/search?q=hal"]);
  
  */
 @interface CSURITemplate : NSObject
@@ -64,8 +75,8 @@ extern NSString *const CSURITemplateErrorScanLocationErrorKey;
  Creates and returns a URI template object initialized with the given template string.
  
  @param templateString The RFC6570 conformant string with which to initialize the URI template object.
- @param error A pointer to an `NSError` object. If parsing the URI template string fails then the error will 
-    be set to an instance of `NSError` that describes the problem.
+ @param error A pointer to an `NSError` object. If parsing the URI template string fails then the error will
+ be set to an instance of `NSError` that describes the problem.
  @return A new URI template object, or `nil` if the template string could not be parsed.
  */
 + (instancetype)URITemplateWithString:(NSString *)templateString error:(NSError **)error;
@@ -84,17 +95,17 @@ extern NSString *const CSURITemplateErrorScanLocationErrorKey;
 /// @name Expanding the Template with Variables
 ///--------------------------------------------
 
-/** 
+/**
  Expands the template with the given variables.
  
  This method expands the URI template using the variables provided and returns a string.
  If the URI template is valid but has no valid expansion for the given variables, then `nil` is returned and an `error` is set.
- For example, if the URI template is `"{keys:1}"` and `variables` is `{@"semi":@";",@"dot":@".",@"comma":@","}`, 
+ For example, if the URI template is `"{keys:1}"` and `variables` is `{@"semi":@";",@"dot":@".",@"comma":@","}`,
  this method will return nil because the prefix modifier is not applicable to composite values.
  
  @param variables a dictionary of variables to use when expanding the template.
  @param error A pointer to an `NSError` object. If an error occurs while expanding the template then the error will
-    be set to an instance of `NSError` that describes the problem.
+ be set to an instance of `NSError` that describes the problem.
  @returns A string containing the expanded URI reference, or nil if an error was encountered.
  */
 - (NSString *)relativeStringWithVariables:(NSDictionary *)variables error:(NSError **)error;
@@ -102,14 +113,14 @@ extern NSString *const CSURITemplateErrorScanLocationErrorKey;
 /**
  Expands the template with the given variables and constructs a new URL relative to the given base URL.
  
- This method expands the URI template using the variables provided and then constructs a new URL object relative to 
- the base URL provided. If the URI template is valid but has no valid expansion for the given variables, then `nil` is returned 
+ This method expands the URI template using the variables provided and then constructs a new URL object relative to
+ the base URL provided. If the URI template is valid but has no valid expansion for the given variables, then `nil` is returned
  and an `error` is set. For example, if the URI template is `"{keys:1}"` and `variables` is `{@"semi":@";",@"dot":@".",@"comma":@","}`,
  this method will return nil because the prefix modifier is not applicable to composite values.
  
  @param variables a dictionary of variables to use when expanding the template.
  @param error A pointer to an `NSError` object. If an error occurs while expanding the template then the error will
-    be set to an instance of `NSError` that describes the problem.
+ be set to an instance of `NSError` that describes the problem.
  @returns A URL constructed by evaluating the expanded template relative to the given baseURL, or nil if an error was encountered.
  */
 - (NSURL *)URLWithVariables:(NSDictionary *)variables relativeToBaseURL:(NSURL *)baseURL error:(NSError **)error;

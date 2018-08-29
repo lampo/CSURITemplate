@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BE84571516DCC1BE00DFD1C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE84571416DCC1BE00DFD1C0 /* Foundation.framework */; };
-		BE84571A16DCC1BE00DFD1C0 /* CSURITemplate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BE84571916DCC1BE00DFD1C0 /* CSURITemplate.h */; };
-		BE84571C16DCC1BE00DFD1C0 /* CSURITemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE84571B16DCC1BE00DFD1C0 /* CSURITemplate.m */; };
+		B9D99B442136E8F8000C1F96 /* CSURITemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = B9D99B422136E8F8000C1F96 /* CSURITemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9D99B482136E909000C1F96 /* CSURITemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE84571B16DCC1BE00DFD1C0 /* CSURITemplate.m */; };
+		B9D99B492136E915000C1F96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE84571416DCC1BE00DFD1C0 /* Foundation.framework */; };
 		BE84572416DCC1BE00DFD1C0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE84572316DCC1BE00DFD1C0 /* SenTestingKit.framework */; };
 		BE84572616DCC1BE00DFD1C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE84572516DCC1BE00DFD1C0 /* UIKit.framework */; };
 		BE84572716DCC1BE00DFD1C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE84571416DCC1BE00DFD1C0 /* Foundation.framework */; };
-		BE84572A16DCC1BE00DFD1C0 /* libCSURITemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE84571116DCC1BE00DFD1C0 /* libCSURITemplate.a */; };
 		BE84573016DCC1BF00DFD1C0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE84572E16DCC1BF00DFD1C0 /* InfoPlist.strings */; };
 		BE84573316DCC1BF00DFD1C0 /* CSURITemplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE84573216DCC1BF00DFD1C0 /* CSURITemplateTests.m */; };
 		BE84574516DCC8B000DFD1C0 /* extended-tests.json in Resources */ = {isa = PBXBuildFile; fileRef = BE84573E16DCC8B000DFD1C0 /* extended-tests.json */; };
@@ -25,31 +24,10 @@
 		BE84574B16DCC8B000DFD1C0 /* transform-json-tests.xslt in Resources */ = {isa = PBXBuildFile; fileRef = BE84574416DCC8B000DFD1C0 /* transform-json-tests.xslt */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		BE84572816DCC1BE00DFD1C0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BE84570916DCC1BE00DFD1C0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BE84571016DCC1BE00DFD1C0;
-			remoteInfo = CSURITemplate;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		BE84570F16DCC1BE00DFD1C0 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/${PRODUCT_NAME}";
-			dstSubfolderSpec = 16;
-			files = (
-				BE84571A16DCC1BE00DFD1C0 /* CSURITemplate.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		BE84571116DCC1BE00DFD1C0 /* libCSURITemplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCSURITemplate.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9D99B402136E8F8000C1F96 /* CSURITemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSURITemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9D99B422136E8F8000C1F96 /* CSURITemplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSURITemplate.h; sourceTree = "<group>"; };
+		B9D99B432136E8F8000C1F96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE84571416DCC1BE00DFD1C0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BE84571816DCC1BE00DFD1C0 /* CSURITemplate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CSURITemplate-Prefix.pch"; sourceTree = "<group>"; };
 		BE84571916DCC1BE00DFD1C0 /* CSURITemplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSURITemplate.h; sourceTree = "<group>"; };
@@ -73,11 +51,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BE84570E16DCC1BE00DFD1C0 /* Frameworks */ = {
+		B9D99B3C2136E8F8000C1F96 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE84571516DCC1BE00DFD1C0 /* Foundation.framework in Frameworks */,
+				B9D99B492136E915000C1F96 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,18 +66,27 @@
 				BE84572416DCC1BE00DFD1C0 /* SenTestingKit.framework in Frameworks */,
 				BE84572616DCC1BE00DFD1C0 /* UIKit.framework in Frameworks */,
 				BE84572716DCC1BE00DFD1C0 /* Foundation.framework in Frameworks */,
-				BE84572A16DCC1BE00DFD1C0 /* libCSURITemplate.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B9D99B412136E8F8000C1F96 /* CSURITemplate */ = {
+			isa = PBXGroup;
+			children = (
+				B9D99B422136E8F8000C1F96 /* CSURITemplate.h */,
+				B9D99B432136E8F8000C1F96 /* Info.plist */,
+			);
+			path = CSURITemplate;
+			sourceTree = "<group>";
+		};
 		BE84570816DCC1BE00DFD1C0 = {
 			isa = PBXGroup;
 			children = (
 				BE84571616DCC1BE00DFD1C0 /* CSURITemplate */,
 				BE84572B16DCC1BF00DFD1C0 /* CSURITemplateTests */,
+				B9D99B412136E8F8000C1F96 /* CSURITemplate */,
 				BE84571316DCC1BE00DFD1C0 /* Frameworks */,
 				BE84571216DCC1BE00DFD1C0 /* Products */,
 				BE84576616DF64AB00DFD1C0 /* CSURITemplate.podspec */,
@@ -111,8 +98,8 @@
 		BE84571216DCC1BE00DFD1C0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BE84571116DCC1BE00DFD1C0 /* libCSURITemplate.a */,
 				BE84572216DCC1BE00DFD1C0 /* CSURITemplateTests.octest */,
+				B9D99B402136E8F8000C1F96 /* CSURITemplate.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -180,14 +167,26 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		B9D99B3D2136E8F8000C1F96 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9D99B442136E8F8000C1F96 /* CSURITemplate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		BE84571016DCC1BE00DFD1C0 /* CSURITemplate */ = {
+		B9D99B3F2136E8F8000C1F96 /* CSURITemplate */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BE84573616DCC1BF00DFD1C0 /* Build configuration list for PBXNativeTarget "CSURITemplate" */;
+			buildConfigurationList = B9D99B452136E8F8000C1F96 /* Build configuration list for PBXNativeTarget "CSURITemplate" */;
 			buildPhases = (
-				BE84570D16DCC1BE00DFD1C0 /* Sources */,
-				BE84570E16DCC1BE00DFD1C0 /* Frameworks */,
-				BE84570F16DCC1BE00DFD1C0 /* CopyFiles */,
+				B9D99B3B2136E8F8000C1F96 /* Sources */,
+				B9D99B3C2136E8F8000C1F96 /* Frameworks */,
+				B9D99B3D2136E8F8000C1F96 /* Headers */,
+				B9D99B3E2136E8F8000C1F96 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -195,8 +194,8 @@
 			);
 			name = CSURITemplate;
 			productName = CSURITemplate;
-			productReference = BE84571116DCC1BE00DFD1C0 /* libCSURITemplate.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = B9D99B402136E8F8000C1F96 /* CSURITemplate.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		BE84572116DCC1BE00DFD1C0 /* CSURITemplateTests */ = {
 			isa = PBXNativeTarget;
@@ -210,7 +209,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				BE84572916DCC1BE00DFD1C0 /* PBXTargetDependency */,
 			);
 			name = CSURITemplateTests;
 			productName = CSURITemplateTests;
@@ -223,8 +221,15 @@
 		BE84570916DCC1BE00DFD1C0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Cogenta Systems Ltd";
+				TargetAttributes = {
+					B9D99B3F2136E8F8000C1F96 = {
+						CreatedOnToolsVersion = 9.4;
+						DevelopmentTeam = T88LXU5DBG;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = BE84570C16DCC1BE00DFD1C0 /* Build configuration list for PBXProject "CSURITemplate" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -238,13 +243,20 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BE84571016DCC1BE00DFD1C0 /* CSURITemplate */,
+				B9D99B3F2136E8F8000C1F96 /* CSURITemplate */,
 				BE84572116DCC1BE00DFD1C0 /* CSURITemplateTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B9D99B3E2136E8F8000C1F96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BE84571F16DCC1BE00DFD1C0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -279,11 +291,11 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BE84570D16DCC1BE00DFD1C0 /* Sources */ = {
+		B9D99B3B2136E8F8000C1F96 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE84571C16DCC1BE00DFD1C0 /* CSURITemplate.m in Sources */,
+				B9D99B482136E909000C1F96 /* CSURITemplate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +309,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		BE84572916DCC1BE00DFD1C0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BE84571016DCC1BE00DFD1C0 /* CSURITemplate */;
-			targetProxy = BE84572816DCC1BE00DFD1C0 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		BE84572E16DCC1BF00DFD1C0 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -317,22 +321,168 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B9D99B462136E8F8000C1F96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = T88LXU5DBG;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CSURITemplate/CSURITemplate-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = CSURITemplate/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramseysolutions.CSURITemplate;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WARNING_CFLAGS = (
+					"-Wimplicit-atomic-properties",
+					"-Wstrict-selector-match",
+					"-Wsign-conversion",
+				);
+			};
+			name = Debug;
+		};
+		B9D99B472136E8F8000C1F96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = T88LXU5DBG;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CSURITemplate/CSURITemplate-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = CSURITemplate/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramseysolutions.CSURITemplate;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WARNING_CFLAGS = (
+					"-Wimplicit-atomic-properties",
+					"-Wstrict-selector-match",
+					"-Wsign-conversion",
+				);
+			};
+			name = Release;
+		};
 		BE84573416DCC1BF00DFD1C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -341,9 +491,11 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -353,58 +505,39 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		BE84573716DCC1BF00DFD1C0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DSTROOT = /tmp/CSURITemplate.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CSURITemplate/CSURITemplate-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				WARNING_CFLAGS = (
-					"-Wimplicit-atomic-properties",
-					"-Wstrict-selector-match",
-					"-Wsign-conversion",
-				);
-			};
-			name = Debug;
-		};
-		BE84573816DCC1BF00DFD1C0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DSTROOT = /tmp/CSURITemplate.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CSURITemplate/CSURITemplate-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				WARNING_CFLAGS = (
-					"-Wimplicit-atomic-properties",
-					"-Wstrict-selector-match",
-					"-Wsign-conversion",
-				);
 			};
 			name = Release;
 		};
@@ -418,6 +551,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CSURITemplate/CSURITemplate-Prefix.pch";
 				INFOPLIST_FILE = "CSURITemplateTests/CSURITemplateTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cogenta.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -433,6 +567,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CSURITemplate/CSURITemplate-Prefix.pch";
 				INFOPLIST_FILE = "CSURITemplateTests/CSURITemplateTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cogenta.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -441,20 +576,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B9D99B452136E8F8000C1F96 /* Build configuration list for PBXNativeTarget "CSURITemplate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9D99B462136E8F8000C1F96 /* Debug */,
+				B9D99B472136E8F8000C1F96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BE84570C16DCC1BE00DFD1C0 /* Build configuration list for PBXProject "CSURITemplate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BE84573416DCC1BF00DFD1C0 /* Debug */,
 				BE84573516DCC1BF00DFD1C0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BE84573616DCC1BF00DFD1C0 /* Build configuration list for PBXNativeTarget "CSURITemplate" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BE84573716DCC1BF00DFD1C0 /* Debug */,
-				BE84573816DCC1BF00DFD1C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
