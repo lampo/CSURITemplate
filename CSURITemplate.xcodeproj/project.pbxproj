@@ -29,8 +29,6 @@
 		B9D99B422136E8F8000C1F96 /* CSURITemplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSURITemplate.h; sourceTree = "<group>"; };
 		B9D99B432136E8F8000C1F96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE84571416DCC1BE00DFD1C0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		BE84571816DCC1BE00DFD1C0 /* CSURITemplate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CSURITemplate-Prefix.pch"; sourceTree = "<group>"; };
-		BE84571916DCC1BE00DFD1C0 /* CSURITemplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSURITemplate.h; sourceTree = "<group>"; };
 		BE84571B16DCC1BE00DFD1C0 /* CSURITemplate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSURITemplate.m; sourceTree = "<group>"; };
 		BE84572216DCC1BE00DFD1C0 /* CSURITemplateTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSURITemplateTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE84572316DCC1BE00DFD1C0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -72,21 +70,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B9D99B412136E8F8000C1F96 /* CSURITemplate */ = {
-			isa = PBXGroup;
-			children = (
-				B9D99B422136E8F8000C1F96 /* CSURITemplate.h */,
-				B9D99B432136E8F8000C1F96 /* Info.plist */,
-			);
-			path = CSURITemplate;
-			sourceTree = "<group>";
-		};
 		BE84570816DCC1BE00DFD1C0 = {
 			isa = PBXGroup;
 			children = (
 				BE84571616DCC1BE00DFD1C0 /* CSURITemplate */,
 				BE84572B16DCC1BF00DFD1C0 /* CSURITemplateTests */,
-				B9D99B412136E8F8000C1F96 /* CSURITemplate */,
 				BE84571316DCC1BE00DFD1C0 /* Frameworks */,
 				BE84571216DCC1BE00DFD1C0 /* Products */,
 				BE84576616DF64AB00DFD1C0 /* CSURITemplate.podspec */,
@@ -117,7 +105,7 @@
 		BE84571616DCC1BE00DFD1C0 /* CSURITemplate */ = {
 			isa = PBXGroup;
 			children = (
-				BE84571916DCC1BE00DFD1C0 /* CSURITemplate.h */,
+				B9D99B422136E8F8000C1F96 /* CSURITemplate.h */,
 				BE84571B16DCC1BE00DFD1C0 /* CSURITemplate.m */,
 				BE84571716DCC1BE00DFD1C0 /* Supporting Files */,
 			);
@@ -127,7 +115,7 @@
 		BE84571716DCC1BE00DFD1C0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BE84571816DCC1BE00DFD1C0 /* CSURITemplate-Prefix.pch */,
+				B9D99B432136E8F8000C1F96 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
